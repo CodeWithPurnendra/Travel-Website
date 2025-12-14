@@ -14,16 +14,19 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  background: #fff;
-  backdrop-filter: blur(10px);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px rgba(128, 128, 128, 0.658);
+  background: rgba(255, 255, 255, 0.18); /* translucent glass */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px); /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 5%;
+  padding: 0 5%;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -31,7 +34,7 @@ body {
 }
 
 .logo {
-  font-size: 4.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #1e90ff;
   letter-spacing: 1px;
@@ -46,17 +49,17 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.9rem;
-  padding: 1.2rem 0;
+  gap: 2.9rem;
+  padding: 1rem 0;
 }
 
 .nav-bar a {
   text-decoration: none;
   color: #333333;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.5px;
   transition: color 0.3s ease, transform 0.3s ease;
-  font-size: 3.8rem;
+  font-size: 1rem;
 }
 
 .nav-bar a:hover {
@@ -65,13 +68,13 @@ body {
 }
 
 .btn {
-  width: 256px;
-  height: 105px;
+  width: 116px;
+  height: 45px;
   border-radius: 12px;
   background-color: #ff7a59;
   color: #fff;
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
 }
@@ -79,11 +82,10 @@ body {
 .hero-section {
   background-image: url("images/background.jpg");
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 10px;
-  background-attachment: fixed;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,36 +104,93 @@ body {
   z-index: 1;
 }
 
-.hero-section * {
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   position: relative;
   z-index: 2;
 }
-.hero-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-}
 .headline {
-  font-size: 5.7rem;
+  font-size: 2.2rem;
   text-align: center;
   font-weight: 700;
   letter-spacing: 2px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
 }
 
 .sub-text {
-  font-size: 3.7rem;
+  font-size: 1.5rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
 }
 
 .journey {
-  width: 446px;
-  height: 105px;
-  border-radius: 12px;
-  font-size: 2.8rem;
+  width: 166px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 1.1rem;
   cursor: pointer;
   background-color: rgba(128, 128, 128, 0.315);
   color: #fff;
   border: 1px solid rgba(128, 128, 128, 0.315);
+  position: relative;
+  z-index: 2;
+}
+
+.destination {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.destination-card {
+  display: grid;
+  grid-template-rows: 180px auto 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.destination-card img {
+  width: 120%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.destination-card h3 {
+  padding: 1rem;
+  margin-top: 60px;
+  font-size: 2rem;
+  text-align: center;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.fade-element{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-element .visible{
+  opacity: 1;
+}
+/* Accessibility: reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .destination-card {
+    transition: none;
+  }
 }
