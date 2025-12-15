@@ -8,8 +8,6 @@ Interactive functionality using **JavaScript is planned and coming soon** 🚀
 ## 🔗 Live Demo
 
 > 🌐 *Coming Soon*
-> (Add your GitHub Pages or deployment link here)
-
 ---
 
 ## ✨ Key Features
@@ -74,8 +72,6 @@ This project was created to:
 ## 📸 Screenshots
 
 > 📷 Screenshots will be added soon
-
-(You can add images using the following format)
 
 ```md
 ![Homepage](images/screenshots/home.png)
