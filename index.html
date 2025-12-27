@@ -1,155 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description"
-    content="TripWave helps you discover beautiful destinations, explore travel packages, and book unforgettable journeys with ease.">
-  <meta name="keywords" content="TripWave, travel, destinations, tour packages, book travel, vacation planning">
+
+  <!-- SEO -->
+  <meta name="description" content="TripWave helps you discover beautiful destinations, explore travel packages, and book unforgettable journeys with ease.">
+  <meta name="keywords" content="TripWave, travel, destinations, tour packages, vacation planning">
   <meta name="author" content="TripWave">
-  <meta name="robots" content="index, follow">
+
+  <!-- Social -->
   <meta property="og:title" content="TripWave - Travel Smarter, Explore More">
-  <meta property="og:description" content="Explore destinations, packages, and book your next adventure with TripWave.">
+  <meta property="og:description" content="Explore destinations and book your next adventure with TripWave.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.tripwave.com">
-  <meta property="og:image" content="https://www.tripwave.com/assets/og-image.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TripWave - Discover Your Next Journey">
-  <meta name="twitter:description" content="Plan trips, explore destinations, and book travel packages with TripWave.">
-  <meta name="twitter:image" content="https://www.tripwave.com/assets/twitter-image.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <title>TripWave | Discover Destinations & Travel Packages</title>
+
+  <!-- Hero preload -->
+  <link rel="preload" as="image" href="images/background.jpg" fetchpriority="high">
+
+  <title>TripWave | Discover Destinations</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="nav-bar" role="banner">
-    <h1 class="logo">TripWave</h1>
 
-    <nav class="nav-right" role="navigation" aria-label="Primary Navigation">
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="destination.html">Destination</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+<!-- ================= Header ================= -->
+<header class="nav-bar" role="banner">
+  <h1 class="logo">TripWave</h1>
 
-      <button class="btn" aria-label="Book your travel now">Book Now</button>
-    </nav>
-  </header>
+  <nav class="nav-right" aria-label="Primary Navigation">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="destination.html">Destinations</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="btn">Book Now</button>
+  </nav>
+</header>
 
-  <main class="hero-section">
-    <section class="hero-content">
-      <h2 class="headline">Discover the World Beyond Boundaries</h2>
-      <p class="sub-text">Explore breathtaking destinations, unforgettable journeys, and moments that stay with you
-        forever.</p>
-      <button class="journey">Start Your Journey</button>
-    </section>
-  </main>
+<main>
 
-  <section class="destination" aria-label="Top travel destinations">
+<!-- ================= Hero ================= -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h2 class="headline"></h2>
+    <p class="sub-text">
+      Explore breathtaking destinations, unforgettable journeys, and moments that stay with you forever.
+    </p>
+    <button class="journey">Start Your Journey</button>
+  </div>
+</section>
+
+<!-- ================= Destinations ================= -->
+<section class="destination-section" aria-label="Top travel destinations">
+
+  <div class="destination">
     <article class="destination-card">
-      <img src="images/bali-temple.jpg" alt="Ancient Balinese temple surrounded by lush greenery in Bali" loading="lazy"
-        decoding="async" width="400" height="300">
+      <img src="images/bali-temple.jpg" alt="Balinese temple in Bali" loading="lazy">
       <h3>Bali, Indonesia</h3>
     </article>
 
     <article class="destination-card">
-      <img src="images/iceland.jpg" alt="Snow-covered mountains and icy landscapes in Greenland" loading="lazy"
-        decoding="async" width="400" height="300">
+      <img src="images/iceland.jpg" alt="Iceland snowy mountains" loading="lazy">
       <h3>Iceland</h3>
     </article>
 
     <article class="destination-card">
-      <img src="images/japan.jpg" alt="Traditional Japanese street with cherry blossom trees" loading="lazy"
-        decoding="async" width="400" height="300">
+      <img src="images/japan.jpg" alt="Kyoto cherry blossom street" loading="lazy">
       <h3>Kyoto, Japan</h3>
     </article>
 
     <article class="destination-card">
-      <img src="images/tokyo.jpg" alt="Tokyo city skyline at night with illuminated skyscrapers" loading="lazy"
-        decoding="async" width="400" height="300">
+      <img src="images/tokyo.jpg" alt="Tokyo city skyline" loading="lazy">
       <h3>Tokyo, Japan</h3>
     </article>
 
     <article class="destination-card">
-      <img src="images/antarctica.jpg" alt="Snow-covered ice formations and glaciers in Antarctica under a clear sky"
-        loading="lazy" decoding="async" width="400" height="300">
+      <img src="images/antarctica.jpg" alt="Antarctica glaciers" loading="lazy">
       <h3>Antarctica</h3>
     </article>
 
     <article class="destination-card">
-      <img src="images/kashmir.jpg" alt="Scenic Kashmir valley with snow-capped mountains, rivers, and lush greenery"
-        loading="lazy" decoding="async" width="400" height="300">
+      <img src="images/kashmir.jpg" alt="Kashmir valley" loading="lazy">
       <h3>Kashmir, India</h3>
     </article>
 
     <article class="destination-card">
-      <img src="images/switzerland.jpg"
-        alt="Swiss Alps landscape with snow-covered mountains, green meadows, and alpine houses" loading="lazy"
-        decoding="async" width="400" height="300">
+      <img src="images/switzerland.jpg" alt="Swiss Alps" loading="lazy">
       <h3>Switzerland</h3>
     </article>
 
     <article class="destination-card">
-      <img src="images/santorini.jpg"
-        alt="Whitewashed buildings with blue domes overlooking the sea in Santorini, Greece" loading="lazy"
-        decoding="async" width="400" height="300">
+      <img src="images/santorini.jpg" alt="Santorini blue domes" loading="lazy">
       <h3>Santorini, Greece</h3>
     </article>
+  </div>
+</section>
 
-    <article class="destination-card">
-      <img src="images/greenland.jpg"
-        alt="Whitewashed buildings with blue domes overlooking the sea in Santorini, Greece" loading="lazy"
-        decoding="async" width="400" height="300">
-      <h3>Greenland</h3>
+<!-- ================= Packages ================= -->
+<section class="package-container" aria-labelledby="package-heading">
+  <h2 id="package-heading" class="package-heading">Popular Travel Packages</h2>
+
+  <div class="package-grid">
+    <article class="package-card">
+      <img src="images/bali-temple.jpg" alt="Bali temple" loading="lazy">
+      <h3>Bali, Indonesia</h3>
+      <p>Experience serene beaches and vibrant culture and peacful temples that make Bali a perfect tropical escape.</p>
+      <button class="package-price">$1,899</button>
     </article>
 
-    <section class="package-container" aria-labelledby="package-heading">
-      <h2 class="package-heading">Popular Travel Packages</h2>
-        
-      <div class="package-grid">
+    <article class="package-card">
+      <img src="images/kashmir.jpg" alt="Kashmir valley" loading="lazy">
+      <h3>Kashmir, India</h3>
+      <p>Snow-capped mountains and breathtaking views that makes Kashmir a true paradise on earth.</p>
+      <button class="package-price">$4,599</button>
+    </article>
 
-        <article class="package-card">
-          <img src="images/bali-temple.jpg" alt="Ancient Balinese temple surrounded by lush greenery in Bali"
-          loading="lazy" decoding="async" width="400" height="300">
-          <h3>Bali, Indonesia</h3>
-          <p>
-            Experience serene beaches, ancient temples, and vibrant culture in this
-            tropical paradise.
-          </p>
-          <p class="package-price"><strong>Price:</strong> $1,899</p>
-        </article>
-        
-        <article class="package-card">
-          <img src="images/greenland.jpg" alt="Snow-covered mountains and icy landscapes in Greenland" loading="lazy"
-          decoding="async" width="400" height="300">
-          <h3>Greenland</h3>
-          <p>
-            Discover breathtaking glaciers, icy fjords, and the untouched beauty of
-            the Arctic wilderness.
-          </p>
-          <p class="package-price"><strong>Price:</strong> $4,599</p>
-        </article>
-        
-        <article class="package-card">
-          <img src="images/japan.jpg" alt="Traditional Japanese street with cherry blossom trees" loading="lazy"
-          decoding="async" width="400" height="300">
-          <h3>Kyoto, Japan</h3>
-          <p>
-            Wander through historic temples, tranquil gardens, and iconic cherry
-            blossom streets.
-          </p>
-          <p class="package-price"><strong>Price:</strong> $2,499</p>
-        </article>
-      </div>
-    </section>
+    <article class="package-card">
+      <img src="images/japan.jpg" alt="Kyoto street" loading="lazy">
+      <h3>Kyoto, Japan</h3>
+      <p>Historic temples,cherry blossom streets,traditional culture and timeless beauty make kyoto a magical destination.</p>
+      <button class="package-price">$2,499</button>
+    </article>
+  </div>
+</section>
 
-    <script src="script.js" defer></script>
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="contact">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>TripWave</h2>
+      <p>Curated journeys and unforgettable experiences.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer Navigation">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: support@tripwave.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 TripWave. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
-
 </html>
