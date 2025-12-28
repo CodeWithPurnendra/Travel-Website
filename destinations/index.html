@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TripWave helps you discover beautiful destinations, explore travel packages, and book unforgettable journeys with ease.">
+  <meta name="keywords" content="TripWave, travel, destinations, tour packages, vacation planning">
+  <meta name="author" content="TripWave">
+  <meta property="og:title" content="TripWave - Travel Smarter, Explore More">
+  <meta property="og:description" content="Explore destinations and book your next adventure with TripWave.">
+  <meta property="og:type" content="website">
+  <title>TripWave | Discover Destinations</title>
+  <link rel="stylesheet" href="destinations.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=sort" />
+</head>
+<body>
+   
+<!-- ================= Header ================= -->
+        <!-- TODO: add dynamic link later -->
+         
+  <header class="nav-bar" role="banner">
+  <h1 class="logo">TripWave</h1>
+
+  <nav class="nav-right" aria-label="Primary Navigation">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/destinations/index.html">Destinations</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="btn">Book Now</button>
+  </nav>
+</header>
+ 
+<!-- ================= Hero Section ================= -->
+
+<main class="hero-section">
+  <div class="hero-container">
+    <section class="hero-content">
+      <h1>Explore Beautiful Destinations</h1>
+      <p>Handpicked places around the world for unforgettable journeys</p>
+      
+      <div class="header-action">
+        <span class="material-symbols-outlined sort-icon">sort</span>
+        <!-- Dropdown -->
+        <div class="filter-dropdown" id="filterDropdown">
+          <ul>
+            <li>Sort A → Z</li>
+            <li>Sort Z → A</li>
+            <li>Highest Rated</li>
+            <li>Lowest Price</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ================= Destination Section ================= -->
+
+    <section class="destinations">
+      <article class="destination-card">
+        <img src="assets/images/antarctica.jpg" alt="Antarctica">
+        <div class="card-info">
+          <h3>Antarctica</h3>
+          <div class="rating">⭐ 4.8 <span>(210 reviews)</span></div>
+          <div class="card-bottom">
+            <span class="price">₹1,49,999</span>
+            <button class="book-now">Book Now</button>
+          </div>
+      </article>
+
+      <article class="destination-card">
+        <img src="assets/images/bali-temple.jpg" alt="Bali">
+        <div class="card-info">
+          <h3>Bali</h3>
+          <div class="rating">⭐ 4.7 <span>(1,320 reviews)</span></div>
+          <div class="card-bottom">
+            <span class="price">₹59,999</span>
+            <button class="book-now">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="destination-card">
+        <img src="assets/images/iceland.jpg" alt="Iceland">
+        <div class="card-info">
+          <h3>Iceland</h3>
+          <div class="rating">⭐ 4.9 <span>(540 reviews)</span></div>
+          <div class="card-bottom">
+            <span class="price">₹1,09,999</span>
+            <button class="book-now">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="destination-card">
+        <img src="assets/images/japan.jpg" alt="Japan">
+        <div class="card-info">
+          <h3>Japan</h3>
+          <div class="rating">⭐ 4.8 <span>(2,010 reviews)</span></div>
+          <div class="card-bottom">
+            <span class="price">₹99,999</span>
+            <button class="book-now">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="destination-card">
+        <img src="assets/images/kashmir.jpg" alt="Kashmir">
+        <div class="card-info">
+          <h3>Kashmir</h3>
+          <div class="rating">⭐ 4.6 <span>(880 reviews)</span></div>
+          <div class="card-bottom">
+            <span class="price">₹39,999</span>
+            <button class="book-now">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="destination-card">
+        <img src="assets/images/santorini.jpg" alt="Santorini">
+        <div class="card-info">
+          <h3>Santorini</h3>
+          <div class="rating">⭐ 4.9 <span>(1,150 reviews)</span></div>
+          <div class="card-bottom">
+            <span class="price">₹89,999</span>
+           <button class="book-now">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="destination-card">
+        <img src="assets/images/switzerland.jpg" alt="Switzerland">
+        <div class="card-info">
+          <h3>Switzerland</h3>
+          <div class="rating">⭐ 5.0 <span>(1,980 reviews)</span></div>
+          <div class="card-bottom">
+            <span class="price">₹1,29,999</span>
+            <button class="book-now">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="destination-card">
+        <img src="assets/images/tokyo.jpg" alt="Tokyo">
+        <div class="card-info">
+          <h3>Tokyo</h3>
+          <div class="rating">⭐ 4.8 <span>(2,340 reviews)</span></div>
+          <div class="card-bottom">
+            <span class="price">₹95,999</span>
+           <button class="book-now">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+    <article class="destination-card" data-destination="Goa Beach" data-price="34999">
+  <img src="assets/images/Goa-beach.jpg" alt="Goa Beach with golden sand and blue sea">
+  <div class="card-info">
+    <h3>Goa Beach</h3>
+    <div class="rating">
+      ⭐ 4.6 <span>(4,120 reviews)</span>
+    </div>
+    <div class="card-bottom">
+      <span class="price">₹34,999</span>
+      <button class="book-now" aria-label="Book trip to Goa Beach">
+        Book Now
+      </button>
+    </div>
+  </div>
+</article>
+
+<article class="destination-card" data-destination="Baga Beach" data-price="29999">
+  <img src="assets/images/Baga-beach.jpg" alt="Baga Beach in Goa with lively shoreline and waves">
+  <div class="card-info">
+    <h3>Baga Beach</h3>
+    <div class="rating">
+      ⭐ 4.5 <span>(3,860 reviews)</span>
+    </div>
+    <div class="card-bottom">
+      <span class="price">₹29,999</span>
+      <button class="book-now" aria-label="Book trip to Baga Beach">
+        Book Now
+      </button>
+    </div>
+  </div>
+</article>
+
+<article class="destination-card" data-destination="Manali" data-price="44999">
+  <img src="assets/images/Manali.jpg" alt="Snow covered mountains and valley in Manali">
+  <div class="card-info">
+    <h3>Manali</h3>
+    <div class="rating">
+      ⭐ 4.7 <span>(5,210 reviews)</span>
+    </div>
+    <div class="card-bottom">
+      <span class="price">₹44,999</span>
+      <button class="book-now" aria-label="Book trip to Manali">
+        Book Now
+      </button>
+    </div>
+  </div>
+</article>
+
+<article class="destination-card" data-destination="Himachal Pradesh" data-price="54999">
+  <img src="assets/images/Himachal-pradesh.jpg" alt="Scenic mountains and valleys in Himachal Pradesh">
+  <div class="card-info">
+    <h3>Himachal Pradesh</h3>
+    <div class="rating">
+      ⭐ 4.8 <span>(6,430 reviews)</span>
+    </div>
+    <div class="card-bottom">
+      <span class="price">₹54,999</span>
+      <button class="book-now" aria-label="Book trip to Himachal Pradesh">
+        Book Now
+      </button>
+    </div>
+  </div>
+</article>
+    </section>
+  </div>
+</main>
+  <script src="destinations.js"></script>
+</body>
+</html>
