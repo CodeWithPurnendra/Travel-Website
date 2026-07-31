@@ -5,11 +5,6 @@ Interactive functionality using **JavaScript is planned and coming soon** 🚀
 
 ---
 
-## 🔗 Live Demo
-
-> 🌐 *Coming Soon*
----
-
 ## ✨ Key Features
 
 * 🧭 Modern travel-themed UI design
@@ -66,16 +61,6 @@ This project was created to:
 * Build clean, scalable layouts
 * Prepare a strong base for JavaScript integration
 * Showcase UI/UX skills for a travel-based website
-
----
-
-## 📸 Screenshots
-
-> 📷 Screenshots will be added soon
-
-```md
-![Homepage](images/screenshots/home.png)
-```
 
 ---
 
