@@ -71,7 +71,7 @@ Follow these steps to run TripWave locally:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/CodeWithPurnendra/TripWave.git
+   git clone https://github.com/CodeWithPurnendra/Travel-Website.git
    ```
 
 2. **Navigate to the project folder**
